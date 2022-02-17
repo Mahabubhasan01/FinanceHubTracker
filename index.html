@@ -14,7 +14,7 @@
     <header>
         <div class="d-md-flex">
             <div class="text-center text-primary">
-                <h2>FinanceHub Tracker</h2>
+                <h5>FinanceHub Tracker</h5>
             </div>
           <!--  <div class="">
             <img class="img-fluid h-50" src="/images/money-budget-logo.png" alt="">
@@ -23,14 +23,40 @@
     </header>
     <main>
         <!-- main box -->
-        <div class="row container">
-            <div class="col-md-6">
-              <img src="/images/aside-p.jpg" alt="">
+       <div class="container">
+        <div class="row container-fluid bg-info">
+          <div class="col-md-7 mx-auto">
+            <img src="/images/aside-p.jpg" alt="">
+          </div>
+          <div class="col-md-5 ">
+            <h3 class="text-center">Income</h3>
+            <h5>Income:<input type="number" name="" id="income-input"></h5>
+            <h3 class="text-center">Expenses</h3>
+            <h5 class="">Food:<input class="border rounded-pill" type="number" name="" id="food-input"></h5>
+            <h5>Rent:  <input type="number" name="" id="rent-input"></h5>
+            <h5>Cloths:<input type="number" name="" id="cloths-input"></h5>
+            <span class="text-center"><button type="button" class="btn btn-info border border-3 rounded-pill" id="calculate-btn">Calculate</button></span>
+            <div class="text-center">
+              <h5>Total Expenses:<span id="total">5500</span></h5>
+            <h5>Balance:<span id="balance">5100</span></h5>
             </div>
-            <div class="col-md-6">
-              <h3>Income:<input type="text" name="" id=""></h3>
+            <div class="d-md-flex">
+              <div>
+                <h5>save:<input type="number" name="" id="save-input"></h5>
+              </div>
+              <div>
+                <h5>%<button id="save-btn" type="button" class="btn btn-info">Save</button></h5>
+                
+              </div>
+            </div>
+            <div class="text-center ">
+              <h5>Saving Amount:<span id="saving-amount"></span>1500</h5>
+            <h5>Remaining Aalance:<span id="remaining-balance"></span>500</h5>
             </div>
           </div>
+         
+        </div>
+       </div>
     </main>
     <footer>
 
@@ -39,6 +65,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="/Js/index.js"></script>
+    <script src="Js/index.js"></script>
 </body>
 </html>
