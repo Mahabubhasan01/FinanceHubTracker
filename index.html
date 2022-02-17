@@ -12,46 +12,50 @@
 </head>
 <body>
     <header>
-        <div class="d-md-flex">
-            <div class="text-center text-primary">
-                <h5>FinanceHub Tracker</h5>
+      <!-- top title  -->
+            <div class="text-center text-primary fs-1">
+                <h1 class="fs-1">FinanceHub Tracker</h1>
             </div>
-          <!--  <div class="">
-            <img class="img-fluid h-50" src="/images/money-budget-logo.png" alt="">
-           </div> -->
-        </div>
     </header>
     <main>
         <!-- main box -->
-       <div class="container">
-        <div class="row container-fluid bg-info">
-          <div class="col-md-7 mx-auto">
-            <img src="/images/aside-p.jpg" alt="">
+        <!-- images part  -->
+       <div class="container p-4">
+        <div class=" row gx-3">
+          <div class="col-md-7 mx-auto bg-info p-4 h-25">
+            <img class="" src="/images/Simple-Calculator-mod-free.jpg" alt="">
           </div>
-          <div class="col-md-5 ">
-            <h3 class="text-center">Income</h3>
-            <h5>Income:<input type="number" name="" id="income-input"></h5>
-            <h3 class="text-center">Expenses</h3>
-            <h5 class="">Food:<input class="border rounded-pill" type="number" name="" id="food-input"></h5>
-            <h5>Rent:  <input type="number" name="" id="rent-input"></h5>
-            <h5>Cloths:<input type="number" name="" id="cloths-input"></h5>
-            <span class="text-center"><button type="button" class="btn btn-info border border-3 rounded-pill" id="calculate-btn">Calculate</button></span>
+          <!-- input data  -->
+          <div class="col-md-5 bg-info ">
+            <h3 class="">Income</h3>
+            <h4>income:<input type="number" name="" id="income-input"></h4>
+
+            <div class=""><h3 class="">Expenses</h3></div>
+
+            <h4 class="">Food:<input class="border rounded-pill" type="number" name="" id="food-input"></h4>
+            <br>
+            <h4>Rent:  <input type="number" name="" id="rent-input"></h4>
+            <br>
+            <h4>Cloths:<input type="number" name="" id="cloths-input"></h4>
+            <br>
+            <span class=""><button type="button" class="btn btn-info" id="calculate-btn">Calculate</button></span>
             <div class="text-center">
-              <h5>Total Expenses:<span id="total">5500</span></h5>
-            <h5>Balance:<span id="balance">5100</span></h5>
+              <h4>Total Expenses: <span id="total">5500</span></h4>
+            <h4>Balance: <span id="balance">4500</span></h4>
             </div>
-            <div class="d-md-flex">
-              <div>
-                <h5>save:<input type="number" name="" id="save-input"></h5>
+
+            <!-- second part -->
+            <div class="size">
+              <div class="">
+                <h4 class="">Save:<input type="number" name="" id="save-input"></h4>
               </div>
               <div>
-                <h5>%<button id="save-btn" type="button" class="btn btn-info">Save</button></h5>
-                
+                <span class=""> %<button id="save-btn" type="button" class="btn btn-info">Save</button></span>
               </div>
             </div>
             <div class="text-center ">
-              <h5>Saving Amount:<span id="saving-amount"></span>1500</h5>
-            <h5>Remaining Aalance:<span id="remaining-balance"></span>500</h5>
+              <h4>Saving Amount: <span id="saving-amount"></span>2000</h4>
+            <h4>Remaining Balance: <span id="remaining-balance"></span>2500</h4>
             </div>
           </div>
          
@@ -59,12 +63,17 @@
        </div>
     </main>
     <footer>
+      <div class="hide">
+        <h3 id="first">Oppss!,Please enter valid digit here  </h3>
+        <h3 class="second">Its much  over </h3>
+      </div>
 
     </footer>
     <!-- bootstrap link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- costom js link  -->
     <script src="Js/index.js"></script>
 </body>
 </html>

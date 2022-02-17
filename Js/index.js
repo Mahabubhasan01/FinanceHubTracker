@@ -3,55 +3,52 @@
     
 
 
-
-
+// first section calculation js code here 
+    //  main funtion 
     function getInputAmount(){
-    const totalAmountValue = document.getElementById('income-input').value;
 
-    const foodInput = document.getElementById('food-input').value
-    const rentInput = document.getElementById('rent-input').value
-    const clothsInput = document.getElementById('cloths-input').value
+    const foodInputText = document.getElementById('food-input').value;
+    const foodInput=parseFloat(foodInputText);
 
-    const total = parseFloat(foodInput) + parseFloat(rentInput) + parseFloat(clothsInput);
+    const rentInputText = document.getElementById('rent-input').value;
+    const rentInput = parseFloat(rentInputText);
+
+    const clothsInputText = document.getElementById('cloths-input').value;
+    const clothsInput = parseFloat(clothsInputText);
     
-     const totalAmount = totalAmountValue - total;
+        const total =foodInput + rentInput+ clothsInput;
+        return total;
+    };
 
-         document.getElementById('total').innerText=total
-         document.getElementById('balance').innerText = totalAmount
-    
-    } 
+
      document.getElementById('calculate-btn').addEventListener('click',function () {
-        getInputAmount();
+       /*  getInputAmount(); */
+       const totalAmountValue = document.getElementById('income-input').value;
+
+        const totalAmount = totalAmountValue -  getInputAmount();
+    
+        document.getElementById('total').innerText= getInputAmount();
+        document.getElementById('balance').innerText = totalAmount;
     })
 
-    
+
+
+// second section calculation js code here 
      document.getElementById('save-btn').addEventListener('click',function () {
 
         const totalAmount = document.getElementById('income-input').value;
         const totalAmountValue = parseFloat(totalAmount);
-
+        
         const saveText = document.getElementById('save-input').value;
         const save = parseFloat(saveText);
 
-        const saveMoney= totalAmountValue * save/100;
-
-        document.getElementById('saving-amount').innerText=saveMoney;
-
-
-
-    const foodInput = document.getElementById('food-input').value
-    const rentInput = document.getElementById('rent-input').value
-    const clothsInput = document.getElementById('cloths-input').value
-
-    const total = parseFloat(foodInput) + parseFloat(rentInput) + parseFloat(clothsInput);
-    
-    const totalAmountText = totalAmountValue - total;
-    const raminBalance = totalAmountText - saveMoney;
-    document.getElementById('remaining-balance').innerText= raminBalance;
-
-
-
+        const saveMoney=  save/100 * totalAmountValue;
         
 
+        document.getElementById('saving-amount').innerText=saveMoney;
+        
+        const totalAmountSum = totalAmountValue - getInputAmount();
+        const remainBalance = totalAmountSum - saveMoney;
+        document.getElementById('remaining-balance').innerText= remainBalance;
     }) 
     
